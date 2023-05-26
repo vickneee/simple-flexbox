@@ -72,10 +72,11 @@ img {
     height: 300px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
     border-radius: 20px;
+    transition: 1s all ease-in;
 }
 
 img:hover {
-    scale: 1.02;
+    transform: scale(1.05);
 }
 
 html.dark {
