@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #222;
+    --secondary-color: #fff;
+}
+
+html {
+    transition: all 0.7s ease-in;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.togglebtn {
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+    cursor: pointer;
+    scale: 0.98;
+}
+
+.togglebtn:focus {
+    outline: lightskyblue;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    border-bottom: 2px solid lightskyblue;
+    width: 450px;
+    text-align: center;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+h1 {
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    border-radius: 20px;
+}
+
+img:hover {
+    scale: 1.02;
+}
+
+html.dark {
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+html.dark img {
+    box-shadow: 1px 1px 5px 2px #fff;
+}
+
+html.dark h1,
+html.dark footer {
+    color: var(--secondary-color);
+}
+
+html.dark .togglebtn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/*** Media Queries ***/
+
+@media (max-width: 768px) {
+
+    .toggle {
+        top: 120px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    img {
+        width: 350px;
+        height: 200px;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+        border-radius: 20px;
+    }
+
+    .toggle {
+        top: 110px;
+        right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
