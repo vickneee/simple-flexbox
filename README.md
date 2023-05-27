@@ -1,6 +1,6 @@
 # simple-flexbox
 
-A simple flexbox with a light and dark theme using HTML, CSS & JavaScript. Responsive.
+A simple CSS flexbox with a light and dark theme using HTML, CSS & JavaScript. Responsive.
 
 <img width="1343" alt="Screenshot 2023-05-26 at 21 40 10" src="https://github.com/vickneee/simple-flexbox/assets/93821265/d052d8c9-c8fd-499d-ab20-1a79d4c5af0e">
 
